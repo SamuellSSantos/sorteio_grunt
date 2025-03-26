@@ -94,5 +94,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-clean');
 
     grunt.registerTask('default', ['watch']);
-    grunt.registerTask('build', ['less:production', 'htmlmin:dist', 'replace:dist', 'clean']);
+    grunt.registerTask('build', ['less:development', 'htmlmin:dist', 'replace:dev', 'clean']);
 }
