@@ -88,7 +88,9 @@ module.exports = function(grunt) {
             }
         }
     },
-    clean: ['prebuild'],
+    clean: {
+        prebuild:['prebuild']
+    },
     uglify: {
         target: {
             files: {
